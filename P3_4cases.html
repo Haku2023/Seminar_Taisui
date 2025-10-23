@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Welcome to Taisui Seminar — A place for learning and collaboration."
+    />
+    <title>Taisui Seminar</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #fafafa;
+        color: #333;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+      header {
+        background: #2c3e50;
+        color: white;
+        padding: 1.5em 0;
+      }
+      main {
+        padding: 0 2em;
+        margin: auto;
+      }
+      h1 {
+        color: #2c3e50;
+      }
+      footer {
+        /* background: #f4f4f4; */
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        font-size: 2em;
+        /* color: #666; */
+      }
+      button {
+        background: linear-gradient(135deg, #6e8efb, #a777e3);
+        color: white;
+        padding: 1rem 2rem;
+        font-size: 18px;
+        font-weight: 600;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease;
+      }
+      button:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        background: linear-gradient(135deg, #a777e3, #6e8efb);
+        color: #ffe082;
+      }
+
+      button:active {
+        transform: translateY(1px);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      }
+      a {
+        color: #007acc;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      #mainbox {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 50vh 50vh;
+        margin: 0 1rem;
+        padding: 0 1rem;
+        width: 100%;
+        height: 80vh;
+      }
+      iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+      .submainbox {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div id="mainbox">
+        <div class="submainbox">
+          <iframe src="./pages/P3_Upwind.html"></iframe>
+        </div>
+        <div class="submainbox">
+          <iframe src="./pages/P3_Central.html"></iframe>
+        </div>
+        <div class="submainbox">
+          <iframe src="./pages/P3_HighUpwind.html"></iframe>
+        </div>
+        <div class="submainbox">
+          <iframe src="./pages/P3_CIP.html"></iframe>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <button onclick="window.location.href='./P2_4cases.html'">
+        Previous Part
+      </button>
+
+      <button onclick="window.location.href='./P1_up-central.html'">
+        Next Part
+      </button>
+    </footer>
+  </body>
+</html>
